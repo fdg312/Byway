@@ -1,8 +1,8 @@
 # Byway
 
-## Course marketplace
+### Course marketplace
 
 ## TODO
 
-- [ ] Deploy
+- [x] Deploy
 - [ ] Create authorization with help of next-auth
