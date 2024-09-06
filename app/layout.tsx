@@ -1,3 +1,4 @@
+import { SpeedInsights } from '@vercel/speed-insights/next'
 import type { Metadata } from 'next'
 import { Inter, Poppins } from 'next/font/google'
 import './globals.css'
@@ -28,6 +29,7 @@ export default function RootLayout({
 		<html lang='en'>
 			<body className={`${inter.className} ${poppins.className}`}>
 				{children}
+				<SpeedInsights />
 			</body>
 		</html>
 	)
