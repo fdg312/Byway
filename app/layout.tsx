@@ -1,3 +1,4 @@
+import Navbar from '@/components/shared/Navbar'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import type { Metadata } from 'next'
 import { Inter, Poppins } from 'next/font/google'
@@ -9,11 +10,11 @@ const inter = Inter({
 	variable: '--font-inter',
 })
 
-const poppins = Poppins({
-	subsets: ['latin'],
-	weight: ['400', '500', '600'],
-	variable: '--font-poppins',
-})
+// const poppins = Poppins({
+// 	subsets: ['latin'],
+// 	weight: ['400', '500', '600'],
+// 	variable: '--font-poppins',
+// })
 
 export const metadata: Metadata = {
 	title: 'Byway',
@@ -27,7 +28,8 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='en'>
-			<body className={`${inter.className} ${poppins.className}`}>
+			<body className={`${inter.className}`}>
+				<Navbar />
 				{children}
 				<SpeedInsights />
 			</body>
