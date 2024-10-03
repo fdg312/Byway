@@ -1,7 +1,8 @@
+import Footer from '@/components/shared/Footer'
 import Navbar from '@/components/shared/Navbar'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import type { Metadata } from 'next'
-import { Inter, Poppins } from 'next/font/google'
+import { Inter } from 'next/font/google'
 import './globals.css'
 
 const inter = Inter({
@@ -31,6 +32,7 @@ export default function RootLayout({
 			<body className={`${inter.className}`}>
 				<Navbar />
 				{children}
+				<Footer />
 				<SpeedInsights />
 			</body>
 		</html>
